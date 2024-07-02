@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-div{
+    height: 140vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+}
+.section-div h2{
+    font-size: 20px;
+    padding-top: 40px;
+}
+.section-div h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 200;
+    /* margin-top: 30px; */
+    padding-top: 50px;
+}
+.parent-img-div{
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    margin-top: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+.parent-img-div div{
+    width: calc(100% / 4);
+    cursor: pointer;
+    position: relative;
+}
+.parent-img-div div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.p-16{
+    color: white;
+    background-color: aqua;
+    opacity: 1;
+    position: absolute;
+}
+.parent-img-div div:hover .p-16{
+    background-color: transparent;
+    opacity: 1;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;  
+}
+@media (max-width: 834px) {
+    .parent-img-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parent-img-div div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .parent-img-div div{
+        width: calc(100% / 1);
+    }
+}
+.testimonialpage{
+    background-image: url(river.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    padding-top: 50px;
+}
+.lorem-4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.PARTNER-DIV{
+    height: 30VH;
+    color: antiquewhite;
+    align-content: center;
+    padding-top: 50px;
+    background-attachment: fixed;
+}
+.parner-img-div{
+    display: flex;
+    justify-content: center;
+    
+}
+.parner-img-div div img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    margin-top: 20px;
+}
+.PARTNER-DIV div{
+    color: black;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+@media (max-width: 834px){
+.parner-img-div{
+    height: auto;
+}  
+}
